@@ -371,6 +371,58 @@ footer p {
     font-size: 16px;
 }
 
+.how-it-works .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-it-works-steps {
+    margin-top: 30px;
+    text-align: left;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.step-content {
+    font-size: 18px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 54px;
+    top: 37px;
+    width: 2px;
+    height: 66px;
+    background-color: #fff;
+  }
+
+
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .nav-links {
