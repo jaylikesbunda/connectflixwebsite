@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CollectFlix - The Ultimate Media Collection Manager</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <div class="logo">
                 <img src="https://i.ibb.co/JR3ZbdV/icon.png" alt="CollectFlix Logo">
-
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
@@ -19,11 +19,16 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
+        <div class="hero-content container">
             <h1>Manage Your Media Collection with CollectFlix</h1>
             <p>The ultimate open-source tool to organize, track, and value your movie and media collection.</p>
             <a href="#features" class="cta-button">Explore Features</a>
@@ -31,82 +36,98 @@
     </section>
 
     <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <h3>Grid & List View</h3>
-                <p>Toggle between grid and list views to explore your entire media collection at a glance.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Detailed Media View</h3>
-                <p>Click on media covers to access detailed information, including cast, synopsis, and more.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Data Integration</h3>
-                <p>Automatically fetch and update data from The Movie Database, IMDb, and Rotten Tomatoes.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Price Tracking</h3>
-                <p>Track average prices with eBay integration and observe historical trends for your collection.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Lending Management</h3>
-                <p>Set media as lent, add lendee’s name, due date, and get reminders to ask for it back.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Barcode Scanning</h3>
-                <p>Scan barcodes using smartphones, webcams, or USB scanners to easily add media to your collection.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Modern UI</h3>
-                <p>Enjoy a sleek, modern browser UI inspired by Plex, with light/dark themes and easy navigation.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Server-Based Access</h3>
-                <p>Run CollectFlix as a server on your PC, accessible through a web UI on your network.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Automatic Updates</h3>
-                <p>Keep CollectFlix up to date with in-app update notifications and seamless software updates.</p>
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🔍</div>
+                    <h3>Detailed Media View</h3>
+                    <p>Click on media covers to access detailed information, including cast, synopsis, and more.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📊</div>
+                    <h3>Data Integration</h3>
+                    <p>Automatically fetch and update data from The Movie Database, IMDb, and Rotten Tomatoes.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">💰</div>
+                    <h3>Price Tracking</h3>
+                    <p>Track average prices with eBay integration and observe historical trends for your collection.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🔄</div>
+                    <h3>Lending Management</h3>
+                    <p>Set media as lent, add lendee’s name, due date, and get reminders to ask for it back.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📦</div>
+                    <h3>Barcode Scanning</h3>
+                    <p>Scan barcodes using smartphones, webcams, or USB scanners to easily add media to your collection.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">💻</div>
+                    <h3>Modern UI</h3>
+                    <p>Enjoy a sleek, modern browser UI inspired by Plex, with light/dark themes and easy navigation.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🌐</div>
+                    <h3>Server-Based Access</h3>
+                    <p>Run CollectFlix as a server on your PC, accessible through a web UI on your network.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🔄</div>
+                    <h3>Automatic Updates</h3>
+                    <p>Keep CollectFlix up to date with in-app update notifications and seamless software updates.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="how-it-works" class="how-it-works">
-        <h2>How It Works</h2>
-        <p>CollectFlix makes managing your media collection simple and effective:</p>
-        <ul>
-            <li>Grid view displays your entire collection, with adjustable display modes to toggle between grid and list views.</li>
-            <li>Click on a media cover to access a detailed view, pulling information from The Movie Database, IMDb, and Rotten Tomatoes.</li>
-            <li>Automatic data fetching keeps your media information up to date, with integration with eBay to track the average price of your media.</li>
-            <li>Price logging allows you to observe historical price trends for your collection.</li>
-            <li>Manage lending by setting media items as lent, including details such as the lendee’s name and due date, with automated reminders to ask for it back.</li>
-            <li>Scan barcodes using your smartphone, webcam, or USB barcode scanner, and manually enter or correct information if needed.</li>
-            <li>CollectFlix runs as a server on your Windows PC, allowing local network devices to access the database and media scanning.</li>
-            <li>The user interface is designed to be clean, modern, and accessible, with a theme switcher for light and dark modes.</li>
-        </ul>
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>CollectFlix makes managing your media collection simple and effective:</p>
+            <ul>
+                <li>Grid view displays your entire collection, with adjustable display modes to toggle between grid and list views.</li>
+                <li>Click on a media cover to access a detailed view, pulling information from The Movie Database, IMDb, and Rotten Tomatoes.</li>
+                <li>Automatic data fetching keeps your media information up to date, with integration with eBay to track the average price of your media.</li>
+                <li>Price logging allows you to observe historical price trends for your collection.</li>
+                <li>Manage lending by setting media items as lent, including details such as the lendee’s name and due date, with automated reminders to ask for it back.</li>
+                <li>Scan barcodes using your smartphone, webcam, or USB barcode scanner, and manually enter or correct information if needed.</li>
+                <li>CollectFlix runs as a server on your Windows PC, allowing local network devices to access the database and media scanning.</li>
+                <li>The user interface is designed to be clean, modern, and accessible, with a theme switcher for light and dark modes.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="about" class="about">
-        <h2>About CollectFlix</h2>
-        <p>CollectFlix is an open-source application designed to help you manage your movie and media collection with ease. Whether you're a casual collector or a dedicated enthusiast, CollectFlix provides all the tools you need to organize, track, and value your collection.</p>
+        <div class="container">
+            <h2>About CollectFlix</h2>
+            <p>CollectFlix is an open-source application designed to help you manage your movie and media collection with ease. Whether you're a casual collector or a dedicated enthusiast, CollectFlix provides all the tools you need to organize, track, and value your collection.</p>
+        </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <!-- <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button> -->
+                <button type="button" id="visit-site-button">Visit FuckYouDeki.net</button>
+            </form>
+            
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 CollectFlix. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 CollectFlix. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
