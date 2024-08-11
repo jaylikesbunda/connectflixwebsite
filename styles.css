@@ -432,7 +432,15 @@ footer p {
     .menu-toggle {
         display: flex;
     }
-    
+    .step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 54px;
+        top: 118px;
+        width: 2px;
+        height: 66px;
+        background-color: #fff;
+      }
     nav.active .nav-links {
         display: flex;
         flex-direction: column;
